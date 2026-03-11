@@ -119,5 +119,7 @@ ainsi que la documentation complète sur GitHub.
 👩‍💻 **Auteur** : Mariane AMOUSSOU 
 📅 **Date** : Mars 2026  
 📎 **Fichier** : `Dashboard_Stock.xlsm`  
+
 🔗 Version Anglaise disponible ici: [README.md](README.md)
+
 🔗 **Lien GitHub** : https://github.com/MarianeAMOUSSOU/Dashboard_Stock(https://github.com/MarianeAMOUSSOU/Dashboard_Stock)
