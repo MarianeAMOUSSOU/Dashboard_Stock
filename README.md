@@ -89,6 +89,9 @@ Le projet se concentre sur la création d’un **dashboard interactif et dynamiq
 ---
 
 ## ✨ Résultats
+## 🖼️ Aperçu du Dashboard
+Voici un aperçu visuel du tableau de bord interactif réalisé sous Excel :
+![Aperçu du Dashboard](Dashboard_Stock.png)
 - Pilotage visuel et automatisé de la gestion de stock  
 - Saisie simplifiée des opérations  
 - Suivi en temps réel des marchandises  
