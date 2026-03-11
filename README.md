@@ -1,124 +1,127 @@
-# Dashboard_Stock
-# 📊 Dashboard de Gestion de Stock
+# 📊 Stock Management Dashboard
 
-## 🎯 Contexte
-Ce projet Excel illustre la transformation d’un fichier multi-feuilles en un **tableau de bord dynamique** pour piloter la gestion des stocks.  
-Il s’appuie sur un modèle pédagogique (entrées, sorties, inventaire, opérations, marchandises) et a été enrichi pour offrir une vue complète de la performance.
-
----
-
-## 📂 Structure du fichier
-
-### 1. Feuille Marchandises
-- Catalogue produit avec :
-  - Référence, Désignation, Catégorie, Unité
-  - Seuil d’alerte, Stock initial, Prix unitaire, Total
-- Formulaire d’ajout de nouvelle marchandise
-- Sert de base pour toutes les opérations
-
-### 2. Feuille Opérations
-- Interface de saisie des mouvements :
-  - Référence, Date, Désignation, Catégorie, Quantité, Prix
-- Boutons : `Entrée`, `Sortie`, `Annuler`
-- Alimente automatiquement les feuilles **Entrées** et **Sorties**
-
-### 3. Feuille Entrées
-- Liste chronologique des approvisionnements :
-  - Date, Référence, Désignation, Catégorie, Quantité, Coût, Total
-- Permet d’analyser les flux d’entrée et les coûts d’achat
-
-### 4. Feuille Sorties
-- Liste des ventes ou retraits :
-  - Date, Référence, Désignation, Catégorie, Quantité, Prix de vente, Total
-- Sert à calculer la valeur des ventes et analyser la performance
-
-### 5. Feuille Inventaire
-- Centralise les données :
-  - Stock initial, Entrées, Sorties, Stock final
-  - CUMP (Coût Unitaire Moyen Pondéré)
-  - Valeur totale
-  - Statut (Stock normal, Stock faible, Non disponible)
-- Génère des alertes visuelles pour le réapprovisionnement
-
-### 6. Feuille Traitement
-- Contient les Tableaux Croisés Dynamiques (TCD) et graphiques construits à partir des données des feuilles "Entrées", "Sorties" et "Inventaire".
-- Sert de zone de calcul et d’analyse intermédiaire.
-- Alimente le Dashboard en indicateurs et visuels interactifs.
-
-### 7. Feuille Dashboard
-- Indicateurs clés :
-  - Stock total, Valeur du stock
-  - Total des entrées/sorties (quantité + valeur)
-- Graphiques :
-  - Répartition par catégorie
-  - Évolution mensuelle des entrées/sorties
-  - Top 3 marchandises
-- Alertes :
-  - Produits à réapprovisionner
-- Filtres interactifs :
-  - Mois, Catégorie, Référence
+## 🎯 Context
+This Excel project illustrates the transformation of a multi-sheet file into a **dynamic dashboard** for stock management.  
+It is based on an educational model (entries, exits, inventory, operations, merchandise) and has been enhanced to provide a complete view of performance.
 
 ---
 
-## 🧠 Logique globale mise à jour
-- **Marchandises** → catalogue produit  
-- **Opérations** → formulaire de saisie (non automatisé dans cette version)  
-- **Entrées** → historique des approvisionnements  
-- **Sorties** → historique des ventes/retraits  
-- **Inventaire** → calcul du stock actuel et alertes  
-- **Traitement** → TCD + graphiques, base analytique  
-- **Dashboard** → synthèse visuelle et dynamique  
+## 📂 File Structure
+
+### 1. Merchandise Sheet
+- Product catalog with:
+  - Reference, Description, Category, Unit
+  - Alert threshold, Initial stock, Unit price, Total
+- Form for adding new merchandise
+- Serves as the basis for all operations
+
+### 2. Operations Sheet
+- Interface for recording movements:
+  - Reference, Date, Description, Category, Quantity, Price
+- Buttons: `Entry`, `Exit`, `Cancel`
+- Automatically feeds the **Entries** and **Exits** sheets
+
+### 3. Entries Sheet
+- Chronological list of supplies:
+  - Date, Reference, Description, Category, Quantity, Cost, Total
+- Allows analysis of incoming flows and purchase costs
+
+### 4. Exits Sheet
+- List of sales or withdrawals:
+  - Date, Reference, Description, Category, Quantity, Sale price, Total
+- Used to calculate sales value and analyze performance
+
+### 5. Inventory Sheet
+- Centralizes data:
+  - Initial stock, Entries, Exits, Final stock
+  - Weighted Average Unit Cost (WAUC)
+  - Total value
+  - Status (Normal stock, Low stock, Not available)
+- Generates visual alerts for restocking
+
+### 6. Processing Sheet
+- Contains Pivot Tables (TCD) and charts built from the "Entries", "Exits", and "Inventory" sheets.
+- Serves as an intermediate calculation and analysis area.
+- Feeds the Dashboard with indicators and interactive visuals.
+
+### 7. Dashboard Sheet
+- Key indicators:
+  - Total stock, Stock value
+  - Total entries/exits (quantity + value)
+- Charts:
+  - Breakdown by category
+  - Monthly trend of entries/exits
+  - Top 3 products
+- Alerts:
+  - Products to be restocked
+- Interactive filters:
+  - Month, Category, Reference
+
+---
+
+## 🧠 Updated Global Logic
+- **Merchandise** → product catalog  
+- **Operations** → input form (not automated in this version)  
+- **Entries** → supply history  
+- **Exits** → sales/withdrawals history  
+- **Inventory** → current stock calculation and alerts  
+- **Processing** → pivot tables + charts, analytical base  
+- **Dashboard** → visual and dynamic synthesis  
 
 ---
 
 ## ⚠️ Note
-Dans cette version, les feuilles **"Opérations"** et **"Marchandises"** servent de modèles de saisie.  
-Les scripts VBA pour automatiser l’ajout des entrées/sorties et l’enregistrement des nouvelles marchandises ne sont pas inclus.  
-Le projet se concentre sur la création d’un **dashboard interactif et dynamique** pour l’analyse des stocks.  
+In this version, the **"Operations"** and **"Merchandise"** sheets serve as input models.  
+The VBA scripts to automate entries/exits and register new merchandise are not included.  
+The project focuses on creating a **dynamic and interactive dashboard** for stock analysis.  
 
 ---
 
-## 🛠️ Technologies utilisées
-- Excel (.xlsm) avec macros VBA  
-- Tableaux Croisés Dynamiques (TCD)  
-- Graphiques dynamiques (barres, courbes, camemberts)  
-- Segments (slicers) pour filtrage interactif  
-- Mise en forme conditionnelle pour alertes visuelles  
-- Formulaires interactifs pour la saisie des opérations
+## 🛠️ Technologies Used
+- Excel (.xlsm) with VBA macros  
+- Pivot Tables (TCD)  
+- Dynamic charts (bar, line, pie)  
+- Slicers for interactive filtering  
+- Conditional formatting for visual alerts  
+- Interactive forms for recording operations  
 
 ---
 
-## ✨ Résultats
-## 🖼️ Aperçu du Dashboard
-Voici un aperçu visuel du tableau de bord interactif réalisé sous Excel :
-![Aperçu du Dashboard](Dashboard_Stock.png)
-- Pilotage visuel et automatisé de la gestion de stock  
-- Saisie simplifiée des opérations  
-- Suivi en temps réel des marchandises  
-- Détection des ruptures et alertes  
-- Export possible en PDF ou présentation  
+## 🖼️ Dashboard Preview
+Here is a visual preview of the interactive dashboard created in Excel:
+
+![Dashboard Preview](Dashboard_Stock.png)
 
 ---
 
-## 🔮 Évolutions possibles
-- Automatisation complète des opérations avec VBA  
-- Export automatique des rapports en PDF  
-- Intégration avec Power BI pour une visualisation avancée  
-- Connexion à une base de données SQL pour un suivi en temps réel
+## ✨ Results
+- Visual and automated stock management  
+- Simplified operation recording  
+- Real-time product tracking  
+- Detection of shortages and alerts  
+- Possible export to PDF or presentation  
 
 ---
 
-
-## 📚 Sources et Remerciements
-Le fichier de base utilisé pour ce projet provient d’une formation disponible sur YouTube,  
-mise à disposition par la chaîne **Hassan EL BAHI (@hassanbahi)** dans un but pédagogique.  
-J’ai suivi cette formation et pratiqué les exercices proposés, puis enrichi le fichier avec mes propres adaptations,  
-notamment la mise en place d’un dashboard interactif, de TCD et de graphiques dynamiques,  
-ainsi que la documentation complète sur GitHub.  
+## 🔮 Possible Improvements
+- Full automation of operations with VBA  
+- Automatic export of reports to PDF  
+- Integration with Power BI for advanced visualization  
+- Connection to an SQL database for real-time tracking  
 
 ---
 
-👩‍💻 **Auteur** : Mariane AMOUSSOU  
-📅 **Date** : Mars 2026  
-📎 **Fichier** : `Dashboard_Stock.xlsm`  
-🔗 **Lien GitHub** : https://github.com/MarianeAMOUSSOU/Dashboard_Stock
+## 📚 Sources and Acknowledgments
+The base file used for this project comes from a training available on YouTube,  
+provided by the channel **Hassan EL BAHI (@hassanbahi)** for educational purposes.  
+I followed this training and practiced the proposed exercises, then enriched the file with my own adaptations,  
+including the implementation of an interactive dashboard, pivot tables, dynamic charts,  
+and complete documentation on GitHub.  
+
+---
+
+👩‍💻 **Author**: Mariane AMOUSSOU  
+📅 **Date**: March 2026  
+📎 **File**: Dashboard_Stock.xlsm 
+🔗 EFrench version available here: [README_FR.md](README_FR.md)
+🔗 **GitHub Link**: [https://github.com/MarianeAMOUSSOU/Dashboard_Stock](https://github.com/MarianeAMOUSSOU/Dashboard_Stock)
