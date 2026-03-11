@@ -97,6 +97,15 @@ Le projet se concentre sur la création d’un **dashboard interactif et dynamiq
 
 ---
 
+## 🔮 Évolutions possibles
+- Automatisation complète des opérations avec VBA  
+- Export automatique des rapports en PDF  
+- Intégration avec Power BI pour une visualisation avancée  
+- Connexion à une base de données SQL pour un suivi en temps réel
+
+---
+
+
 ## 📚 Sources et Remerciements
 Le fichier de base utilisé pour ce projet provient d’une formation disponible sur YouTube,  
 mise à disposition par la chaîne **Hassan EL BAHI (@hassanbahi)** dans un but pédagogique.  
@@ -106,7 +115,7 @@ ainsi que la documentation complète sur GitHub.
 
 ---
 
-👩‍💻 **Auteur** : Mariane  
+👩‍💻 **Auteur** : Mariane AMOUSSOU  
 📅 **Date** : Mars 2026  
 📎 **Fichier** : `Dashboard_Stock.xlsm`  
-🔗 **Lien GitHub** :
+🔗 **Lien GitHub** : https://github.com/MarianeAMOUSSOU/Dashboard_Stock
