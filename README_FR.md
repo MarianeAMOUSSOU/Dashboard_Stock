@@ -90,7 +90,7 @@ Le projet se concentre sur la création d’un **dashboard interactif et dynamiq
 
 ## ✨ Résultats
 ## 🖼️ Aperçu du Dashboard
-![Aperçu du Dashboard](captures/dashboard.png)
+![Dashboard Preview](Dashboard_Stock.png)
 - Pilotage visuel et automatisé de la gestion de stock  
 - Saisie simplifiée des opérations  
 - Suivi en temps réel des marchandises  
