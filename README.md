@@ -1,3 +1,4 @@
+# Dashboard_Stock
 # 📊 Stock Management Dashboard
 
 ## 🎯 Context
@@ -123,5 +124,5 @@ and complete documentation on GitHub.
 👩‍💻 **Author**: Mariane AMOUSSOU  
 📅 **Date**: March 2026  
 📎 **File**: Dashboard_Stock.xlsm 
-🔗 EFrench version available here: [README_FR.md](README_FR.md)
+🔗 French version available here: [README_FR.md](README_FR.md)
 🔗 **GitHub Link**: [https://github.com/MarianeAMOUSSOU/Dashboard_Stock](https://github.com/MarianeAMOUSSOU/Dashboard_Stock)
